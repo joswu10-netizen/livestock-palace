@@ -1,0 +1,1188 @@
+
+/* LIVESTOCK PALACE OFFICIAL COLORS */
+:root {
+    --green: #004d2b;
+    --gold: #d4a329;
+    --white: #ffffff;
+    --cream: #faf8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cream);
+    color: #25352b;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #003c23, #006b3d);
+    color: var(--white);
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 5px solid var(--gold);
+}
+
+header h1 {
+    color: var(--gold);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: var(--white);
+    padding: 40px 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+section h2 {
+    color: var(--green);
+    margin-bottom: 15px;
+}
+
+footer {
+    background: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+}
+
+
+/* LIVESTOCK PALACE LOGO */
+
+.business-logo {
+    display: block;
+    width: 180px;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 3px solid #d4a329;
+    background-color: white;
+    padding: 6px;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .business-logo {
+        width: 140px;
+    }
+}
+
+
+/* LIVESTOCK PALACE NAVIGATION */
+
+.navbar {
+    background-color: #003c23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 20px;
+    border-bottom: 3px solid #d4a329;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+    background-color: #d4a329;
+    color: #003c23;
+}
+
+/* SMOOTH SCROLLING */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 600px) {
+    .navbar {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+}
+
+
+/* LIVESTOCK PALACE PRODUCT CATALOGUE */
+
+.section-intro {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid #e8e3d5;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.product-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #004d2b;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* MOBILE PRODUCT LAYOUT */
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .product-card {
+        padding: 25px 15px;
+    }
+
+    .product-icon {
+        font-size: 55px;
+    }
+}
+
+
+/* PRODUCT PHOTOGRAPHS */
+
+.product-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .product-image {
+        height: 200px;
+    }
+}
+
+
+/* WHATSAPP ORDER BUTTON */
+
+.order-btn {
+    display: inline-block;
+    background-color: #006b3d;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #d4a329;
+    color: #003c23;
+}
+
+
+/* PRODUCT PRICE & AVAILABILITY */
+
+.product-details {
+    margin-top: 18px;
+    padding: 15px;
+    background-color: #faf8f0;
+    border-radius: 10px;
+    border: 1px solid #e8e3d5;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #25352b;
+}
+
+.product-details p:last-child {
+    margin-bottom: 0;
+}
+
+.product-details strong {
+    color: #004d2b;
+}
+
+/* WHATSAPP SECTION */
+
+#whatsapp {
+    text-align: center;
+}
+
+#whatsapp p {
+    margin-bottom: 15px;
+}
+
+
+/* WHATSAPP SECTION */
+
+#whatsapp {
+    background: linear-gradient(135deg, #003c23, #006b3d);
+    color: white;
+    text-align: center;
+    padding: 45px 25px;
+    border: 2px solid #d4a329;
+}
+
+#whatsapp h2 {
+    color: #d4a329;
+    margin-bottom: 15px;
+}
+
+#whatsapp p {
+    color: white;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+#whatsapp .order-btn {
+    background-color: #d4a329;
+    color: #003c23;
+}
+
+#whatsapp .order-btn:hover {
+    background-color: white;
+    color: #003c23;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    background-color: white;
+    border-left: 5px solid #d4a329;
+}
+
+#contact h2 {
+    color: #004d2b;
+}
+
+#contact p {
+    margin-bottom: 15px;
+}
+
+#contact a {
+    color: #006b3d;
+    font-weight: bold;
+}
+
+
+/* PROFESSIONAL CONTACT SECTION */
+
+#contact.contact-section {
+    background: #ffffff;
+    border-left: 5px solid #d4a329;
+    padding: 45px 35px;
+}
+
+.contact-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.contact-label {
+    display: inline-block;
+    color: #ac8018;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.contact-heading h2 {
+    color: #004d2b;
+    font-size: clamp(24px, 4vw, 32px);
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    color: #555;
+    line-height: 1.8;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    background: #faf8f0;
+    border: 1px solid #eee4ce;
+    border-radius: 12px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.contact-box h3 {
+    color: #004d2b;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.contact-box p {
+    color: #333;
+    line-height: 1.7;
+}
+
+.contact-box a {
+    color: #006b3d;
+    text-decoration: underline;
+}
+
+.contact-call-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background: #004d2b;
+    color: #ffffff !important;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.contact-call-btn:hover {
+    background: #d4a329;
+    color: #003c23 !important;
+}
+
+/* MOBILE CONTACT SECTION */
+
+@media (max-width: 700px) {
+    #contact.contact-section {
+        padding: 30px 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-box {
+        padding: 20px;
+    }
+
+    .contact-call-btn {
+        width: 100%;
+    }
+}
+
+
+/* LIVESTOCK PALACE - MOBILE IMPROVEMENTS */
+
+@media (max-width: 600px) {
+
+    /* Compact mobile header */
+    header {
+        display: grid;
+        grid-template-columns: 64px minmax(0, 1fr);
+        grid-template-rows: auto auto;
+        align-items: center;
+        column-gap: 12px;
+        row-gap: 4px;
+        padding: 12px 14px;
+        text-align: left;
+    }
+
+    header .business-logo {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        width: 64px;
+        height: 64px;
+        max-width: 100%;
+        margin: 0;
+        padding: 3px;
+        object-fit: contain;
+    }
+
+    header h1 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: clamp(17px, 4.7vw, 21px);
+        line-height: 1.15;
+        letter-spacing: 0;
+        margin: 0;
+        align-self: end;
+    }
+
+    header p {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 11px;
+        line-height: 1.35;
+        margin: 0;
+        align-self: start;
+    }
+
+    /* Single-row scrollable navigation */
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 4px;
+        padding: 7px 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navbar a {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        font-size: 12px;
+        padding: 9px 10px;
+    }
+}
+
+
+/* MOBILE HAMBURGER MENU */
+
+/* Hide mobile menu on desktop */
+.mobile-menu {
+    display: none;
+}
+
+/* Show mobile menu on phones */
+@media (max-width: 600px) {
+
+    /* Hide desktop navigation */
+    nav.navbar {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        background: #003c23;
+        border-bottom: 3px solid #d4a329;
+    }
+
+    .mobile-menu summary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 20px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        list-style: none;
+    }
+
+    .mobile-menu summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .mobile-menu summary span {
+        color: #d4a329;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .mobile-menu summary:focus-visible {
+        outline: 3px solid #d4a329;
+        outline-offset: -3px;
+    }
+
+    .mobile-menu nav {
+        display: flex;
+        flex-direction: column;
+        padding: 8px 15px 15px;
+        background: #003c23;
+    }
+
+    .mobile-menu nav a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        padding: 14px;
+        border-bottom: 1px solid
+            rgba(255, 255, 255, 0.15);
+    }
+
+    .mobile-menu nav a:hover,
+    .mobile-menu nav a:focus-visible {
+        color: #d4a329;
+        background: #005a35;
+    }
+
+    .mobile-menu nav a:last-child {
+        border-bottom: none;
+    }
+}
+
+
+/* ===================================
+   LIVESTOCK PALACE PREMIUM HOMEPAGE
+=================================== */
+
+section#home.hero {
+    background: linear-gradient(
+        135deg,
+        #003c23 0%,
+        #006b3d 100%
+    );
+    color: #ffffff;
+    padding: 55px 45px;
+    border: 2px solid #d4a329;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-label {
+    display: inline-block;
+    color: #e0b448;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+#home.hero h2 {
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+    max-width: 700px;
+}
+
+.hero-description {
+    color: #f1f5ef;
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+/* HOMEPAGE BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.hero-primary-btn {
+    background: #d4a329;
+    color: #003c23;
+}
+
+.hero-primary-btn:hover {
+    background: #ffffff;
+    color: #003c23;
+}
+
+.hero-secondary-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #d4a329;
+}
+
+.hero-secondary-btn:hover {
+    background: #d4a329;
+    color: #003c23;
+}
+
+.hero-location {
+    color: #e7dfcd;
+    font-size: 14px;
+}
+
+/* MOBILE HOMEPAGE */
+
+@media (max-width: 600px) {
+
+    section#home.hero {
+        padding: 32px 22px;
+        border-radius: 12px;
+    }
+
+    .hero-label {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    #home.hero h2 {
+        font-size: 28px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-primary-btn,
+    .hero-secondary-btn {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .hero-location {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+
+/* COMPACT DESKTOP HEADER */
+
+@media (min-width: 601px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 82px max-content;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        column-gap: 18px;
+        padding: 16px 24px;
+        text-align: left;
+    }
+
+    header .business-logo {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        width: 82px;
+        height: 82px;
+        margin: 0;
+        padding: 3px;
+        object-fit: contain;
+    }
+
+    header h1 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: clamp(24px, 3vw, 34px);
+        line-height: 1.15;
+        margin: 0;
+        align-self: end;
+    }
+
+    header p {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 13px;
+        margin-top: 4px;
+        align-self: start;
+    }
+}
+
+/* FIX DESKTOP LOGO PROPORTIONS */
+
+@media (min-width: 601px) {
+    header .business-logo {
+        width: 82px;
+        height: 82px;
+        max-width: none;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        border-radius: 50%;
+        padding: 3px;
+        margin: 0;
+    }
+}
+
+
+/* HOMEPAGE FARM PHOTOGRAPH */
+
+.hero-photo {
+    width: 100%;
+}
+
+.hero-photo img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border: 2px solid #d4a329;
+    border-radius: 12px;
+}
+
+/* DESKTOP HOMEPAGE LAYOUT */
+
+@media (min-width: 801px) {
+
+    section#home.hero {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        align-items: center;
+        gap: 25px;
+        padding: 38px 32px;
+    }
+
+    #home.hero h2 {
+        font-size: clamp(27px, 2.5vw, 36px);
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+/* TABLET AND MOBILE */
+
+@media (max-width: 800px) {
+
+    section#home.hero {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-photo img {
+        height: 170px;
+    }
+}
+
+/* FINAL MOBILE HOMEPAGE POLISH */
+
+@media (max-width: 600px) {
+
+    section#home.hero {
+        padding: 24px 18px;
+        gap: 16px;
+    }
+
+    .hero-label {
+        margin-bottom: 10px;
+    }
+
+    #home.hero h2 {
+        font-size: 25px;
+        line-height: 1.25;
+        margin-bottom: 14px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .hero-primary-btn,
+    .hero-secondary-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .hero-photo img {
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+/* PROFESSIONAL PRODUCT CARD IMPROVEMENTS */
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card .product-details {
+    margin-top: auto;
+    padding: 18px;
+    background: #faf8f0;
+    border: 1px solid #e8e3d5;
+    border-radius: 10px;
+}
+
+.product-details p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.product-details strong {
+    color: #004d2b;
+    font-weight: 700;
+}
+
+/* SEPARATE AVAILABILITY FROM PRICING */
+
+.product-details p:last-child {
+    border-top: 1px solid #e1d8c5;
+    padding-top: 12px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+/* MOBILE PRODUCT DETAILS */
+
+@media (max-width: 600px) {
+    .product-card .product-details {
+        width: 100%;
+        padding: 14px 12px;
+    }
+
+    .product-details p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+/* PRODUCT STOCK STATUS */
+
+.stock-status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* AVAILABLE */
+
+.stock-available {
+    background-color: #e1f5e9;
+    color: #087333;
+}
+
+/* OUT OF STOCK */
+
+.stock-unavailable {
+    background-color: #fde8e8;
+    color: #b42318;
+}
+
+/* CONFIRM WITH FARM */
+
+.stock-confirm {
+    background-color: #eeeae1;
+    color: #655321;
+}
+
+
+/* PROFESSIONAL DELIVERY SECTION */
+
+#delivery {
+    background: #ffffff;
+    border-left: 5px solid #d4a329;
+}
+
+#delivery h2 {
+    color: #004d2b;
+    margin-bottom: 20px;
+}
+
+#delivery h3 {
+    color: #004d2b;
+    margin: 25px 0 15px;
+}
+
+#delivery p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* DELIVERY LOCATION CARDS */
+
+.delivery-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 25px;
+}
+
+.delivery-list li {
+    background: #faf8f0;
+    border: 1px solid #e8e3d5;
+    padding: 14px 18px;
+    border-radius: 10px;
+    color: #004d2b;
+    font-weight: bold;
+}
+
+.delivery-list li::before {
+    content: "✓";
+    color: #0a7a3f;
+    margin-right: 10px;
+}
+
+/* MOBILE DELIVERY LAYOUT */
+
+@media (max-width: 600px) {
+    .delivery-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .delivery-list li {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+/* LIVESTOCK PALACE - HOW TO ORDER */
+
+.how-to-order {
+    background: #ffffff;
+    border-left: 5px solid #d4a329;
+}
+
+.how-to-order h2 {
+    color: #004d2b;
+    margin-bottom: 12px;
+}
+
+.order-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.order-step {
+    background: #faf8f0;
+    border: 1px solid #e8e3d5;
+    border-radius: 12px;
+    padding: 25px 18px;
+    text-align: center;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #004d2b;
+    color: #d4a329;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.order-step h3 {
+    color: #004d2b;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.order-step p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 700px) {
+    .order-steps {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .order-step {
+        padding: 22px 18px;
+    }
+}
+
+/* =================================
+   LIVESTOCK PALACE FAQ SECTION
+================================= */
+
+.faq-section {
+    background: #ffffff;
+    border-left: 5px solid #d4a329;
+}
+
+.faq-section h2 {
+    color: #004d2b;
+    margin-bottom: 12px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+/* FAQ QUESTION CARDS */
+
+.faq-item {
+    background: #faf8f0;
+    border: 1px solid #e8e3d5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #004d2b;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* PLUS AND MINUS SYMBOLS */
+
+.faq-item summary::after {
+    content: "+";
+    color: #d4a329;
+    font-size: 25px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+/* EXPANDED ANSWER */
+
+.faq-item[open] {
+    background: #ffffff;
+    border-color: #d4a329;
+}
+
+.faq-item p {
+    padding: 0 20px 20px;
+    margin: 0;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.faq-item summary:focus-visible {
+    outline: 3px solid #d4a329;
+    outline-offset: -3px;
+}
+
+/* MOBILE FAQ DESIGN */
+
+@media (max-width: 600px) {
+    .faq-item summary {
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    .faq-item p {
+        padding: 0 16px 18px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
